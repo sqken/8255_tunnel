@@ -7,6 +7,9 @@ if "%DEVICE%"=="" (
     set ADB=adb -s %DEVICE%
 )
 
+REM Mount qlog partition for sharing /qlog directory between android and qnx
+%ADB% shell init.mount_qlog.sh
+
 :loop
 echo Establishing tunnel
 %ADB% root

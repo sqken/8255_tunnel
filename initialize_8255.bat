@@ -10,5 +10,6 @@ set "ADB=adb"
 
 %ADB% push "%DIR%tools\android" /data/FAE/
 %ADB% push "%DIR%tools\qnx" /data/FAE/
-@REM %ADB% shell cp -r /data/FAE/qnx /ota/
+%ADB% shell init.mount_qlog.sh
+%ADB% shell cp -r /data/FAE/qnx /qlog/
 %ADB% shell chmod +x /data/FAE/android/ssh 

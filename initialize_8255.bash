@@ -9,5 +9,6 @@ ${ADB} shell rm -rf /data/FAE
 ${ADB} shell mkdir -p /data/FAE
 
 ${ADB} push ${DIR}/tools/* /data/FAE/
-${ADB} shell cp -r /data/FAE/qnx /ota/
+${ADB} shell init.mount_qlog.sh
+${ADB} shell cp -r /data/FAE/qnx /qlog/
 ${ADB} shell chmod +x /data/FAE/android/ssh

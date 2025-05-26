@@ -7,6 +7,9 @@ else
     ADB="adb -s $DEVICE"
 fi
 
+# Mount qlog partition for sharing /qlog directory between android and qnx
+${ADB} shell init.mount_qlog.sh
+
 while [ 1 ];
 do
     echo "Establishing tunnel"
