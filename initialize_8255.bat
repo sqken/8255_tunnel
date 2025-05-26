@@ -4,7 +4,7 @@ set "DIR=%~dp0"
 set "ADB=adb"
 
 %ADB% root
-%ADB% remount
+@REM %ADB% remount
 %ADB% shell rm -rf /data/FAE
 %ADB% shell mkdir -p /data/FAE
 

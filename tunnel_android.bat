@@ -13,7 +13,7 @@ REM Mount qlog partition for sharing /qlog directory between android and qnx
 :loop
 echo Establishing tunnel
 %ADB% root
-%ADB% remount
+@REM %ADB% remount
 %ADB% forward --remove-all
 %ADB% forward tcp:28000 tcp:28000
 %ADB% forward tcp:30022 tcp:20022
