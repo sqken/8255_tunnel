@@ -3,6 +3,7 @@
 @REM ssh -p 30022 root@127.0.0.1 /ifs/bin/chmod +x /log/qlog/update_avm.sh
 @REM ssh -p 30022 root@127.0.0.1 /ifs/bin/sh /log/qlog/update_avm.sh
 
+adb shell init.mount_qlog.sh
 adb push avm.tar.gz /qlog/
 adb shell tar zxvf /qlog/avm.tar.gz -C /qlog/
 adb push update_avm.sh /qlog/
