@@ -9,6 +9,7 @@ cd /log/qlog/
 # /mnt/bin/tar zxvf /log/qlog/avm.tar.gz
 /mnt/bin/mv /mnt/usr/bin/avm_app /mnt/usr/bin/avm_app.ori
 /ifs/bin/cp qt/bin/avm_app /mnt/usr/bin/avm_app
+/ifs/bin/cp qt/qml/AvmApp/* /mnt/opt/qt/qml/AvmApp/
 /ifs/bin/cp -R qt/qml/content_avm_cdc/* /mnt/opt/qt/qml/content_avm_cdc/
 /ifs/bin/cp qt/libQt6Mega.so.6.8.0 /mnt/opt/qt/lib/
 
