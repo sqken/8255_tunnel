@@ -5,6 +5,7 @@
 
 adb shell init.mount_qlog.sh
 adb push mnt.zip /qlog
+adb shell rm -rf /qlog/mnt/*
 adb shell unzip /qlog/mnt.zip -d /qlog/
 
 ssh -p 30022 root@127.0.0.1 /ifs/bin/mount -uw /mnt/
